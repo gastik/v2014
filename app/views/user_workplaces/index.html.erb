@@ -1,0 +1,33 @@
+<h1>Listing user_workplaces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User profiles</th>
+      <th>Workplaces</th>
+      <th>Name</th>
+      <th>Doctorcount</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_workplaces.each do |user_workplace| %>
+      <tr>
+        <td><%= user_workplace.user_profiles_id %></td>
+        <td><%= user_workplace.workplaces_id %></td>
+        <td><%= user_workplace.Name %></td>
+        <td><%= user_workplace.DoctorCount %></td>
+        <td><%= link_to 'Show', user_workplace %></td>
+        <td><%= link_to 'Edit', edit_user_workplace_path(user_workplace) %></td>
+        <td><%= link_to 'Destroy', user_workplace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User workplace', new_user_workplace_path %>

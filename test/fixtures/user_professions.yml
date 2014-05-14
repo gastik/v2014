@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobtitles_id: 1
+  PracticeSince: 1
+  roles_id: 1
+  user_profiles_id: 1
+
+two:
+  jobtitles_id: 1
+  PracticeSince: 1
+  roles_id: 1
+  user_profiles_id: 1

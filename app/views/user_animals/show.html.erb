@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User profiles:</strong>
+  <%= @user_animal.user_profiles_id %>
+</p>
+
+<p>
+  <strong>Animals:</strong>
+  <%= @user_animal.animals_id %>
+</p>
+
+<p>
+  <strong>Load:</strong>
+  <%= @user_animal.load %>
+</p>
+
+<%= link_to 'Edit', edit_user_animal_path(@user_animal) %> |
+<%= link_to 'Back', user_animals_path %>

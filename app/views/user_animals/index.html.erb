@@ -1,0 +1,31 @@
+<h1>Listing user_animals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User profiles</th>
+      <th>Animals</th>
+      <th>Load</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_animals.each do |user_animal| %>
+      <tr>
+        <td><%= user_animal.user_profiles_id %></td>
+        <td><%= user_animal.animals_id %></td>
+        <td><%= user_animal.load %></td>
+        <td><%= link_to 'Show', user_animal %></td>
+        <td><%= link_to 'Edit', edit_user_animal_path(user_animal) %></td>
+        <td><%= link_to 'Destroy', user_animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User animal', new_user_animal_path %>

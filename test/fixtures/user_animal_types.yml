@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_profiles_id: 1
+  anymal_types_id: 1
+  load: 1
+
+two:
+  user_profiles_id: 1
+  anymal_types_id: 1
+  load: 1

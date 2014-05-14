@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User profiles:</strong>
+  <%= @user_workplace.user_profiles_id %>
+</p>
+
+<p>
+  <strong>Workplaces:</strong>
+  <%= @user_workplace.workplaces_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_workplace.Name %>
+</p>
+
+<p>
+  <strong>Doctorcount:</strong>
+  <%= @user_workplace.DoctorCount %>
+</p>
+
+<%= link_to 'Edit', edit_user_workplace_path(@user_workplace) %> |
+<%= link_to 'Back', user_workplaces_path %>

@@ -1,0 +1,27 @@
+<h1>Listing tadresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tadresses.each do |tadress| %>
+      <tr>
+        <td><%= tadress.country %></td>
+        <td><%= link_to 'Show', tadress %></td>
+        <td><%= link_to 'Edit', edit_tadress_path(tadress) %></td>
+        <td><%= link_to 'Destroy', tadress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tadress', new_tadress_path %>

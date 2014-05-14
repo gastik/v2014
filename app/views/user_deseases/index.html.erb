@@ -1,0 +1,29 @@
+<h1>Listing user_deseases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User profiles</th>
+      <th>Deaseases</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_deseases.each do |user_desease| %>
+      <tr>
+        <td><%= user_desease.user_profiles_id %></td>
+        <td><%= user_desease.deaseases_id %></td>
+        <td><%= link_to 'Show', user_desease %></td>
+        <td><%= link_to 'Edit', edit_user_desease_path(user_desease) %></td>
+        <td><%= link_to 'Destroy', user_desease, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User desease', new_user_desease_path %>

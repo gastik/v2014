@@ -1,0 +1,30 @@
+<%= form_for(@user_profession) do |f| %>
+  <% if @user_profession.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_profession.errors.count, "error") %> prohibited this user_profession from being saved:</h2>
+
+      <ul>
+      <% @user_profession.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :jobtitles_id %><br>
+    <%= f.number_field :jobtitles_id %>
+  </div>
+  <div class="field">
+    <%= f.label :PracticeSince %><br>
+    <%= f.number_field :PracticeSince %>
+  </div>
+  <div class="field">
+    <%= f.label :roles_id %><br>
+    <%= f.number_field :roles_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

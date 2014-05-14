@@ -1,0 +1,2 @@
+module UserAnimalTypesHelper
+end

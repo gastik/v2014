@@ -1,0 +1,27 @@
+<h1>Listing deseases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deseases.each do |desease| %>
+      <tr>
+        <td><%= desease.description %></td>
+        <td><%= link_to 'Show', desease %></td>
+        <td><%= link_to 'Edit', edit_desease_path(desease) %></td>
+        <td><%= link_to 'Destroy', desease, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Desease', new_desease_path %>

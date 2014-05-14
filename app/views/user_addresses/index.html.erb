@@ -1,0 +1,39 @@
+<h1>Listing user_addresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User profile</th>
+      <th>Countries</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Address1</th>
+      <th>Address2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_addresses.each do |user_address| %>
+      <tr>
+        <td><%= user_address.user_profile_id %></td>
+        <td><%= user_address.countries_id %></td>
+        <td><%= user_address.City %></td>
+        <td><%= user_address.State %></td>
+        <td><%= user_address.Zip %></td>
+        <td><%= user_address.Address1 %></td>
+        <td><%= user_address.Address2 %></td>
+        <td><%= link_to 'Show', user_address %></td>
+        <td><%= link_to 'Edit', edit_user_address_path(user_address) %></td>
+        <td><%= link_to 'Destroy', user_address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User address', new_user_address_path %>

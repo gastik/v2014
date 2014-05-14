@@ -1,0 +1,2 @@
+module UserProfessionsHelper
+end

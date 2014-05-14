@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_profiles_id: 1
+  workplaces_id: 1
+  Name: MyString
+  DoctorCount: 1
+
+two:
+  user_profiles_id: 1
+  workplaces_id: 1
+  Name: MyString
+  DoctorCount: 1

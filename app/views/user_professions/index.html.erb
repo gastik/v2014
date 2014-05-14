@@ -1,0 +1,33 @@
+<h1>Listing user_professions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Jobtitles</th>
+      <th>Practicesince</th>
+      <th>Roles</th>
+      <th>User profiles</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_professions.each do |user_profession| %>
+      <tr>
+        <td><%= user_profession.jobtitles_id %></td>
+        <td><%= user_profession.PracticeSince %></td>
+        <td><%= user_profession.roles_id %></td>
+        <td><%= user_profession.user_profiles_id %></td>
+        <td><%= link_to 'Show', user_profession %></td>
+        <td><%= link_to 'Edit', edit_user_profession_path(user_profession) %></td>
+        <td><%= link_to 'Destroy', user_profession, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User profession', new_user_profession_path %>

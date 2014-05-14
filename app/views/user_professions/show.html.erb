@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Jobtitles:</strong>
+  <%= @user_profession.jobtitles_id %>
+</p>
+
+<p>
+  <strong>Practicesince:</strong>
+  <%= @user_profession.PracticeSince %>
+</p>
+
+<p>
+  <strong>Roles:</strong>
+  <%= @user_profession.roles_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_profession_path(@user_profession) %> |
+<%= link_to 'Back', user_professions_path %>

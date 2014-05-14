@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  types_id: 1
+  DoctorCount: 1
+  name: MyString
+
+two:
+  types_id: 1
+  DoctorCount: 1
+  name: MyString

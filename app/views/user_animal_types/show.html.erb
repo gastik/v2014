@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User profiles:</strong>
+  <%= @user_animal_type.user_profiles_id %>
+</p>
+
+<p>
+  <strong>Anymal types:</strong>
+  <%= @user_animal_type.anymal_types_id %>
+</p>
+
+<p>
+  <strong>Load:</strong>
+  <%= @user_animal_type.load %>
+</p>
+
+<%= link_to 'Edit', edit_user_animal_type_path(@user_animal_type) %> |
+<%= link_to 'Back', user_animal_types_path %>
